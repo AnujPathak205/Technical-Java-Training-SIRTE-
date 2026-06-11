@@ -56,6 +56,17 @@
     Exception
         - Checked Exception :
         - Unchecked Exception :- is child of Run time Exception handing
+
+    Functional Interface (SAM - Single Abstract Method):
+        These are interfaces with only one abstract method.
+        - Supplier
+        - Consumer
+        - Predicate
+        - Functional
+            -BiSupplier
+            -BiConsumer
+
+    Lambdas are designed for functional interfaces
 */
 
 class Alfa{
