@@ -1,3 +1,5 @@
+package Polymorphism;
+
 public class BalanceException extends Exception{
     public BalanceException() {
 

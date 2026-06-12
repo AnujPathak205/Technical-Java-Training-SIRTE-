@@ -1,9 +1,11 @@
+package Polymorphism;
+
 public class Accounts {
     private double balance;
 
     @Override
     public String toString() {
-        return "Accounts{" +
+        return "Polymorphism.Accounts{" +
                 "balance=" + balance +
                 '}';
     }
@@ -17,7 +19,7 @@ public class Accounts {
         return balance;
     }
 
-    public double withdraw(double amount) throws BalanceException{
+    public double withdraw(double amount) throws BalanceException {
         if(amount <= balance)
             balance -= amount;
         else

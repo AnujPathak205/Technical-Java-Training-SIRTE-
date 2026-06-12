@@ -1,3 +1,5 @@
+package Polymorphism;
+
 public class TestEmployee {
     public static void main(String[] args) {
         Employee e1 = new Employee(1200);
@@ -15,17 +17,17 @@ public class TestEmployee {
 
     private static void showSalary(Employee e){         // polymorphism
         if(e instanceof Manager)
-            System.out.println("Manager salary: "+e.getSalary());
+            System.out.println("Polymorphism.Manager salary: "+e.getSalary());
         else
-            System.out.println("Clerk salary: "+e.getSalary());
+            System.out.println("Polymorphism.Clerk salary: "+e.getSalary());
     }
 
-//    private static void showSalary(Clerk c1) {
-//        System.out.println("Clerk " + c1.getSalary());
+//    private static void showSalary(Polymorphism.Clerk c1) {
+//        System.out.println("Polymorphism.Clerk " + c1.getSalary());
 //    }
 //
-//    private static void showSalary(Manager m1) {
-//        System.out.println("Manager" + m1.getSalary());
+//    private static void showSalary(Polymorphism.Manager m1) {
+//        System.out.println("Polymorphism.Manager" + m1.getSalary());
 //    }
 
 

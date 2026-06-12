@@ -1,3 +1,5 @@
+package Polymorphism;
+
 import java.util.Objects;
 
 public class Person {
@@ -19,7 +21,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Polymorphism.Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

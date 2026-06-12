@@ -1,4 +1,6 @@
-public class Manager extends Employee{
+package Polymorphism;
+
+public class Manager extends Employee {
     private double commision;
 
     public Manager(double salary,double commission) {
