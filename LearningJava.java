@@ -36,7 +36,7 @@
         - can be accessed by class name (without object)
         - static members belong to class not to object
 
-    Ex: class Polymorphism.Person has a private member:name , a constructor
+    Ex: class Comparator.Person has a private member:name , a constructor
         child class Student 
 
     a class with all static members inharited -> what will happen

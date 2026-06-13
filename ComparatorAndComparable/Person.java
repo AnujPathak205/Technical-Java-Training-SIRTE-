@@ -1,8 +1,8 @@
-package Polymorphism;
+package ComparatorAndComparable;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private String name;
     private int age;
 
@@ -15,13 +15,29 @@ public class Person {
         this.age = age;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void print(){
         System.out.println("Name: "+name+"\t Age: "+age);
     }
 
     @Override
     public String toString() {
-        return "Polymorphism.Person{" +
+        return "Comparator.Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
@@ -39,6 +55,11 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
+    }
+
+    @Override
+    public int compareTo(Person p) {
+        return this.age - p.age;
     }
 
     public static void main(String[] args) {
